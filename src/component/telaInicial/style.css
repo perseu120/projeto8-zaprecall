@@ -1,0 +1,5 @@
+.containerPerguntas{
+    height: 380px;
+    overflow-y: hidden;
+    overflow: scroll;
+}

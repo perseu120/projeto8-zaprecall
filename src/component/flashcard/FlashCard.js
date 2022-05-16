@@ -1,26 +1,37 @@
 import "./style.css"
 import Card from "../card/Card.js";
 import seta from "../../assets/imagem/setinha.png";
+import { useState } from "react";
+import Pergunta from "../pergunta/Pergunta";
 
-export default function FlashCard() {
+export default function FlashCard({nome, pergunta, resposta}) {
+
+    const [isFlip, setIsFlip] = useState(true);
+    const [respondido, setRespondido] = useState(true);
+
+    function flipar(){
+
+        setIsFlip(!isFlip);
+    }
+
     return (
 
         <div>
-            {/* <Card className="frente" >
-                <p className="textoCard">O que é JSX?</p>
-                <div className="imagemSeta">
+
+            {isFlip ? <Card className="frente " >
+                <p className="textoCard">{pergunta}</p>
+                <div className="imagemSeta" onClick={()=>{flipar()}}>
                     <img src={seta} alt="" />
                 </div>
-            </Card>
-            <Card className=" fundo" >
-                <p className="textoCard">JSX é uma sintaxe para
-                    escrever HTML dentro do JS</p>
+            </Card> : <Card className=" fundo" >
+                <p className="textoCard">{resposta}</p>
                 <div className="botoes" >
-                    <button>botao 1</button>
-                    <button> botao 2</button>
-                    <button>botao 3</button>
+                    <button className="botao1" onClick={()=>{ }}>Não lembrei</button>
+                    <button className="botao2"> quase não lembrei 2</button>
+                    <button className="botao3">Zap!</button>
                 </div>
-            </Card> */}
+            </Card> }
+            
         </div>
 
     )

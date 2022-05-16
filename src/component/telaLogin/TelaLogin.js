@@ -2,7 +2,7 @@ import logo from "../../assets/imagem/logo.png";
 import './style.css';
 
 
-export default function TelaLogin(){
+export default function TelaLogin({init, setInit}){
 
     return (
         <div className="telaLogin" >
@@ -11,7 +11,7 @@ export default function TelaLogin(){
 
             <h1 className="tituloPagina">ZapRecall</h1>
 
-            <button className="buttonIniciar" >Iniciar Recall!</button>  
+            <button className="buttonIniciar" onClick={()=>{setInit(!init)}} >Iniciar Recall!</button>  
 
         </div>
     )

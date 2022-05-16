@@ -1,8 +1,11 @@
 import './style.css'
-export default function Footer(props){
-    return(
+export default function Footer(props) {
+    return (
         <footer className="footer">
-            {props.children}
+            <p className='paragrafo'>
+                {props.children}
+            </p>
+
         </footer>
     )
 }

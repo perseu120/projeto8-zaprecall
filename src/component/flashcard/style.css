@@ -1,0 +1,23 @@
+.botao1 {
+    width: 85.17px;
+    height: 37.17px;
+
+    background: #FF3030;
+    border-radius: 5px;
+}
+
+.botao2 {
+    width: 85.17px;
+    height: 37.17px;
+    
+    background: #FF922E;
+    border-radius: 5px;
+}
+
+.botao3{
+    width: 85.17px;
+    height: 37.17px;
+
+    background: #2FBE34;
+    border-radius: 5px;
+}
