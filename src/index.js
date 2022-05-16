@@ -1,12 +1,23 @@
+import './reset.css';
+import './style.css'
 import ReactDOM from 'react-dom';
-import TelaInicial from './TelaInicial';
+import TelaInicial from './component/telaInicial/TelaInicial.js';
+import TelaLogin from './component/telaLogin/TelaLogin.js';
+import { useState } from 'react';
+
 
 function App(){
 
+    
+    const [init, setInit] = useState();
+  
     return(
-        <>
-           <TelaInicial />
-        </>
+
+        <div className='fundoAplicacao'>
+           
+            {true ? <TelaLogin  /> : <TelaInicial />}
+
+        </div>
         
     )
 

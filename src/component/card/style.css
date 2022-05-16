@@ -1,0 +1,46 @@
+.cardlayout {
+
+    width: 299px;
+    height: 131px;
+    background-color: #FFFFD5;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+
+div p{
+    width: 112px;
+    height: 22px;
+    font-family: 'Recursive';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+    margin-left: 20px;
+    margin-top: 10px;
+
+}
+
+.imagemSeta {
+    width: 95%;
+    height: 20px;
+    display: flex;
+    justify-content: right;
+}
+.botoes{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+.textoCard{
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+}
